@@ -33,8 +33,6 @@ env:
     " &&
     python -m pytest {project}
   CIBW_TEST_SKIP: "*-macosx_arm64"
-  CIBW_SKIP: >
-      pp*
 
 jobs:
   test:
