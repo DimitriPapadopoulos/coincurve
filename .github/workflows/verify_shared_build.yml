@@ -51,6 +51,10 @@ jobs:
       if: runner.os == 'macOS'
       run: ./.github/scripts/install-macos-build-deps.sh
 
+    - name: Install UV
+      if: runner.os != 'Linux'
+      uses: astral-sh/setup-uv@v7
+
     - name: Install Hatch
       uses: pypa/hatch@install
 
