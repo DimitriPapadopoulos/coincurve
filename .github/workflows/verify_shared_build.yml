@@ -33,6 +33,7 @@ env:
     " &&
     python -m pytest {project}
   CIBW_TEST_SKIP: "*-macosx_arm64"
+  SKBUILD_LOGGING_LEVEL: 'DEBUG'
 
 jobs:
   test:
